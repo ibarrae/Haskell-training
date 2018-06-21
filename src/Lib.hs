@@ -1,6 +1,6 @@
 module Lib
-    ( someFunc
+    ( add
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "Hello world changes"
+add :: Int -> Int -> Int
+add x y = x + y
