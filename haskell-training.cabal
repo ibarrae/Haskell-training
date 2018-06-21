@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fa69dbdc739c8aee45f9a95f635150a5645816f2b28d050da8220f0f321846c8
+-- hash: b379677e8e5f8375518956f47c6ae2741e8c3d63ac41cf199d8e9978d985141e
 
 name:           haskell-training
 version:        0.1.0.0
@@ -26,6 +26,8 @@ source-repository head
 
 library
   exposed-modules:
+      CreditCardValidation
+      Hanoi
       Lib
   other-modules:
       Paths_haskell_training
@@ -51,6 +53,9 @@ test-suite haskell-training-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      CreditCardValidationSpec
+      HanoiSpec
+      LibSpec
       Paths_haskell_training
   hs-source-dirs:
       test
@@ -58,4 +63,5 @@ test-suite haskell-training-test
   build-depends:
       base >=4.7 && <5
     , haskell-training
+    , hspec
   default-language: Haskell2010
