@@ -30,6 +30,7 @@ library
       Golf
       Hanoi
       Lib
+      LogAnalysis
   other-modules:
       Paths_haskell_training
   hs-source-dirs:
@@ -58,6 +59,7 @@ test-suite haskell-training-test
       GolfSpec
       HanoiSpec
       LibSpec
+      LogAnalysisSpec
       Paths_haskell_training
   hs-source-dirs:
       test
