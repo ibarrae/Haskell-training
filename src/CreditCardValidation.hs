@@ -1,5 +1,4 @@
-module CreditCardValidation (isValidNumber, toDigits, toDigitsRev, doubleEveryOther, sumDigits)where
-import Lib
+module CreditCardValidation where
 
 isValidNumber :: Integer -> Bool
 isValidNumber cardNumber
