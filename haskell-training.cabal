@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6e736ce719d1dbf79e32a1d0f662d0063abd71b7404afb18aac38ecca263d7b3
+-- hash: 0d3e864cb62bf20f5b57aa97a89f6bfa4dc49ba546d4cf413d691a75e7c9464e
 
 name:           haskell-training
 version:        0.1.0.0
@@ -26,12 +26,15 @@ source-repository head
 
 library
   exposed-modules:
+      Calc
       CreditCardValidation
       Golf
       Hanoi
       HigherOrder
       Lib
       LogAnalysis
+      Parser
+      StackVM
   other-modules:
       Paths_haskell_training
   hs-source-dirs:
@@ -56,6 +59,7 @@ test-suite haskell-training-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      CalcSpec
       CreditCardValidationSpec
       GolfSpec
       HanoiSpec
