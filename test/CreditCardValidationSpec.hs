@@ -1,7 +1,7 @@
 module CreditCardValidationSpec where
 
 import Test.Hspec
-import CreditCardValidation
+import HomeworkOne.CreditCardValidation
 
 spec :: Spec
 spec = do

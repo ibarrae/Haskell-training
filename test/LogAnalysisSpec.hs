@@ -1,7 +1,7 @@
 module LogAnalysisSpec where
 
 import Test.Hspec
-import LogAnalysis
+import HomeworkTwo.LogAnalysis
 
 spec :: Spec
 spec = do

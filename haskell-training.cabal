@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0d3e864cb62bf20f5b57aa97a89f6bfa4dc49ba546d4cf413d691a75e7c9464e
+-- hash: 7f1e7d74ad52623ed075c0143cc3dd0a351054032bc291f1f7c8ca46ce6d1f58
 
 name:           haskell-training
 version:        0.1.0.0
@@ -26,15 +26,16 @@ source-repository head
 
 library
   exposed-modules:
-      Calc
-      CreditCardValidation
-      Golf
-      Hanoi
-      HigherOrder
+      HomeworkFive.Calc
+      HomeworkFive.Parser
+      HomeworkFive.StackVM
+      HomeworkFour.HigherOrder
+      HomeworkOne.CreditCardValidation
+      HomeworkOne.Hanoi
+      HomeworkSix.Fibonacci
+      HomeworkThree.Golf
+      HomeworkTwo.LogAnalysis
       Lib
-      LogAnalysis
-      Parser
-      StackVM
   other-modules:
       Paths_haskell_training
   hs-source-dirs:
@@ -61,6 +62,7 @@ test-suite haskell-training-test
   other-modules:
       CalcSpec
       CreditCardValidationSpec
+      FibonacciSpec
       GolfSpec
       HanoiSpec
       HigherOrderSpec

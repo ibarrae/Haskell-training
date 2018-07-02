@@ -1,7 +1,7 @@
 module HanoiSpec where
 
 import Test.Hspec
-import Hanoi
+import HomeworkOne.Hanoi
 
 spec :: Spec
 spec = do

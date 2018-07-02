@@ -1,4 +1,4 @@
-module HigherOrder where
+module HomeworkFour.HigherOrder where
 
 import Data.List
 import Data.Bool

@@ -1,7 +1,7 @@
 module HigherOrderSpec where
 
 import Test.Hspec
-import HigherOrder
+import HomeworkFour.HigherOrder
 
 spec :: Spec
 spec = do
