@@ -1,9 +1,9 @@
 {-# LANGUAGE FlexibleInstances, TypeSynonymInstances #-}
 
-module Calc where
+module HomeworkFive.Calc where
 
-import Parser
-import StackVM
+import HomeworkFive.Parser
+import HomeworkFive.StackVM
 
 data ExprT 
     = Lit Integer

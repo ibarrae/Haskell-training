@@ -1,4 +1,4 @@
-module LogAnalysis where 
+module HomeworkTwo.LogAnalysis where 
 
 import Text.Read 
 

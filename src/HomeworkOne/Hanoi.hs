@@ -1,4 +1,4 @@
-module Hanoi (getMovements, getMovementsWithExtraPeg) where
+module HomeworkOne.Hanoi (getMovements, getMovementsWithExtraPeg) where
     
 type Peg = String
 type Move = (Peg, Peg)

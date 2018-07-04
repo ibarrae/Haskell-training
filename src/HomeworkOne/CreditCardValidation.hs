@@ -1,4 +1,4 @@
-module CreditCardValidation where
+module HomeworkOne.CreditCardValidation where
 
 isValidNumber :: Integer -> Bool
 isValidNumber cardNumber

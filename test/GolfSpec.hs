@@ -1,7 +1,7 @@
 module GolfSpec where
 
 import Test.Hspec
-import Golf
+import HomeworkThree.Golf
 
 spec :: Spec
 spec = do

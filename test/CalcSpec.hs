@@ -3,8 +3,8 @@
 module CalcSpec where
 
 import Test.Hspec
-import Calc
-import StackVM
+import HomeworkFive.Calc
+import HomeworkFive.StackVM
 
 spec :: Spec
 spec = do
