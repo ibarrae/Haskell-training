@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import HomeworkSeven.JoinList
+import HomeworkSeven.Editor
 
 main :: IO ()
-main = putStrLn $ show $ add 4 5
+main = runEditor editor ssjlData

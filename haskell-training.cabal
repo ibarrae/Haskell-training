@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7f1e7d74ad52623ed075c0143cc3dd0a351054032bc291f1f7c8ca46ce6d1f58
+-- hash: 076a2eedf625e922b191559dfd6a1e3315581e2852df3b25fa4f231682fe7843
 
 name:           haskell-training
 version:        0.1.0.0
@@ -32,16 +32,25 @@ library
       HomeworkFour.HigherOrder
       HomeworkOne.CreditCardValidation
       HomeworkOne.Hanoi
+      HomeworkSeven.Buffer
+      HomeworkSeven.Editor
+      HomeworkSeven.JoinList
+      HomeworkSeven.Scrabble
+      HomeworkSeven.Sized
+      HomeworkSeven.StringBufEditor
+      HomeworkSeven.StringBuffer
       HomeworkSix.Fibonacci
       HomeworkThree.Golf
       HomeworkTwo.LogAnalysis
       Lib
+      MonoidExercise.Person
   other-modules:
       Paths_haskell_training
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , mtl
   default-language: Haskell2010
 
 executable haskell-training-exe
@@ -66,14 +75,18 @@ test-suite haskell-training-test
       GolfSpec
       HanoiSpec
       HigherOrderSpec
+      JoinListSpec
       LibSpec
       LogAnalysisSpec
+      PersonSpec
+      ScrabbleSpec
       Paths_haskell_training
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      QuickCheck
+    , base >=4.7 && <5
     , haskell-training
     , hspec
   default-language: Haskell2010
