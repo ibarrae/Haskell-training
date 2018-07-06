@@ -9,9 +9,8 @@ instance Buffer String where
   toString     = id
   fromString   = id
   line n b     = safeIndex n (lines b)
-  replaceLine n l b = unlines . uncurry replaceLine' . splitAt n . lines $ b
-      where replaceLine' pre [] = pre
-            replaceLine' pre (_:ls) = pre ++ l:ls
+  replaceLine n l b = unlines (take (n - 1) sw ++ [l] ++ drop n sw)
+      where sw = lines b
   numLines     = length . lines
   value        = length . words
 
