@@ -24,6 +24,8 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+   - mtl
 
 executables:
   haskell-training-exe:
@@ -46,4 +48,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - haskell-training
+    - QuickCheck
     - hspec
