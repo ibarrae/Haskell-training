@@ -10,11 +10,11 @@ newtype Age
 
 instance Monoid Person where
     mempty = Person (Age 0) ""
-    mappend a b = Person (mappend (getPersonAge a) (getPersonAge b)) (mappend (getName a) (getName b))
+    mappend (Person a1 n1) (Person a2 n2) = Person (a1 `mappend` a2) (n1 `mappend` n2)
 
 instance Monoid Age where
     mempty = Age 0
-    mappend a b = Age ((+) (getAge a) (getAge b))
+    mappend (Age a1) (Age a2) = Age (a1 + a2)
 
 getPersonAge :: Person -> Age
 getPersonAge (Person a _) = a
