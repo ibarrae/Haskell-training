@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 076a2eedf625e922b191559dfd6a1e3315581e2852df3b25fa4f231682fe7843
+-- hash: 78000a111fe5745068e5cefa90a37437218604a80258624573f858f7dcfd8b86
 
 name:           haskell-training
 version:        0.1.0.0
@@ -26,6 +26,8 @@ source-repository head
 
 library
   exposed-modules:
+      HomeworkEight.Employee
+      HomeworkEight.Party
       HomeworkFive.Calc
       HomeworkFive.Parser
       HomeworkFive.StackVM
@@ -50,6 +52,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
     , mtl
   default-language: Haskell2010
 
@@ -78,6 +81,7 @@ test-suite haskell-training-test
       JoinListSpec
       LibSpec
       LogAnalysisSpec
+      PartySpec
       PersonSpec
       ScrabbleSpec
       Paths_haskell_training
@@ -87,6 +91,7 @@ test-suite haskell-training-test
   build-depends:
       QuickCheck
     , base >=4.7 && <5
+    , containers
     , haskell-training
     , hspec
   default-language: Haskell2010

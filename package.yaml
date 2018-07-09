@@ -26,6 +26,7 @@ library:
   source-dirs: src
   dependencies:
    - mtl
+   - containers
 
 executables:
   haskell-training-exe:
@@ -50,3 +51,4 @@ tests:
     - haskell-training
     - QuickCheck
     - hspec
+    - containers
