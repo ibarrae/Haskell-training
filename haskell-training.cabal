@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 78000a111fe5745068e5cefa90a37437218604a80258624573f858f7dcfd8b86
+-- hash: 4c094b1a52a580a3b202415662fa48713034e00e22df1e756170a5215f047aeb
 
 name:           haskell-training
 version:        0.1.0.0
@@ -42,6 +42,7 @@ library
       HomeworkSeven.StringBufEditor
       HomeworkSeven.StringBuffer
       HomeworkSix.Fibonacci
+      HomeworkTen.AParser
       HomeworkThree.Golf
       HomeworkTwo.LogAnalysis
       Lib
@@ -72,6 +73,8 @@ test-suite haskell-training-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      AParserPropertySpec
+      AParserSpec
       CalcSpec
       CreditCardValidationSpec
       FibonacciSpec
