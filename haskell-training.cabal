@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4c094b1a52a580a3b202415662fa48713034e00e22df1e756170a5215f047aeb
+-- hash: 0003ba3866bde51ce91c09cdd35b3d9b58d1f0de640807e96574ad3f97537b0a
 
 name:           haskell-training
 version:        0.1.0.0
@@ -28,6 +28,7 @@ library
   exposed-modules:
       HomeworkEight.Employee
       HomeworkEight.Party
+      HomeworkEleven.SExpr
       HomeworkFive.Calc
       HomeworkFive.Parser
       HomeworkFive.StackVM
@@ -87,6 +88,7 @@ test-suite haskell-training-test
       PartySpec
       PersonSpec
       ScrabbleSpec
+      SExprSpec
       Paths_haskell_training
   hs-source-dirs:
       test
