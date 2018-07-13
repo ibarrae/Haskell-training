@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 08fd21ac76c7d03b1e017201d9ad56d325e97badaa2b7dd550a867b123347ef5
+-- hash: 4c094b1a52a580a3b202415662fa48713034e00e22df1e756170a5215f047aeb
 
 name:           haskell-training
 version:        0.1.0.0
@@ -73,6 +73,7 @@ test-suite haskell-training-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      AParserPropertySpec
       AParserSpec
       CalcSpec
       CreditCardValidationSpec

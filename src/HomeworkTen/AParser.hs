@@ -17,7 +17,6 @@ instance Functor Parser where
 
 instance Applicative Parser where
     pure a = Parser (\s -> Just(a,s))
-    (<*>) :: Parser (a -> b) -> Parser a -> Parser b
     (<*>) (Parser f) p2 = Parser $ \s ->
         case f s of
             Nothing -> Nothing
@@ -95,3 +94,6 @@ intOrUppercase =
         int = f <$> posInt
         upper = f <$> satisfy isUpper
     in int <|> upper
+
+functionParser :: (a -> b) -> Parser(a -> b)
+functionParser f = Parser (\s -> Just(f, s))
