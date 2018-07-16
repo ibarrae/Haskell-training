@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0003ba3866bde51ce91c09cdd35b3d9b58d1f0de640807e96574ad3f97537b0a
+-- hash: 8f2410d7bb0a3a81d1306ec7064aa87bb310b2f9a6061dda1ec84392635edb33
 
 name:           haskell-training
 version:        0.1.0.0
@@ -45,6 +45,7 @@ library
       HomeworkSix.Fibonacci
       HomeworkTen.AParser
       HomeworkThree.Golf
+      HomeworkTwelve.Risk
       HomeworkTwo.LogAnalysis
       Lib
       MonoidExercise.Person
@@ -53,7 +54,8 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      MonadRandom
+    , base >=4.7 && <5
     , containers
     , mtl
   default-language: Haskell2010
@@ -87,6 +89,7 @@ test-suite haskell-training-test
       LogAnalysisSpec
       PartySpec
       PersonSpec
+      RiskSpec
       ScrabbleSpec
       SExprSpec
       Paths_haskell_training
@@ -94,7 +97,8 @@ test-suite haskell-training-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      QuickCheck
+      MonadRandom
+    , QuickCheck
     , base >=4.7 && <5
     , containers
     , haskell-training
