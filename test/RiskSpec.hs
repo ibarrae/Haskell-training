@@ -5,7 +5,7 @@ import HomeworkTwelve.Risk
 import Control.Monad.Random.Lazy
 
 spec :: Spec
-spec = do
+spec =
   describe "battle" $ 
     context "when you evaluate a battlefield" $
       it "responds with a battlefield with less attackers or defenders" $ do
